@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  linear-regression-model:
+    build:
+      context: ./model/
+      dockerfile: Dockerfile
+    volumes:
+      - ./model/:/app/
