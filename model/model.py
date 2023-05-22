@@ -67,8 +67,3 @@ class LogisticRegressionModel:
         return predictions.select("prediction").collect()[0][0]
 
 
-lr = LogisticRegressionModel()
-df = pd.DataFrame([[6, 148., 72., 35., 0., 33.6, 0.627, 51., 1]], columns=allCols)
-print(lr.train(df))
-df = pd.DataFrame([[6, 148., 72., 35., 0., 33.6, 0.627, 50.]], columns=inputCols)
-print(lr.predict(df))
