@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZTP</title>
+</head>
+<body>
+   <h1>Metryki</h1>
+   <b>Accuracy</b>: {{metrics['Accuracy']}}<br>
+   <b>Loss</b>: {{metrics['Loss']}}<br>
+   <b>AUC</b>: {{metrics['AUC']}}<br>
+   <b>MAE</b>: {{metrics['MAE']}}<br>
+   <b>RMSE</b>: {{metrics['RMSE']}}<br>
+
+<h2>Wyświetl metryki z wybranego czasu</h2>
+    <form action="/predict" method="post">
+        <label for="time">Czas (HH:MM:SS):</label>
+        <input type="text" id="time" name="time">
+        <button type="submit">Wyświetl</button>
+    </form>
+</body>
+</html>
+

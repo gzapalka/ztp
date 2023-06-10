@@ -9,3 +9,5 @@ setuptools==67.7.2
 six==1.16.0
 tzdata==2023.3
 wheel==0.40.0
+kafka-python==2.0.2
+flask==2.3.2
