@@ -74,7 +74,7 @@ class LogisticRegressionModel:
 
     def get_metrics_of_time(self, metrics_time):
         for index, metrics in enumerate(self._metrics_list):
-            if metrics[0] < metrics_time:
+            if metrics[0] >= metrics_time:
                 return self._metrics_list[index if index == 0 else index - 1]
 
     def predict(self, data: pandas.DataFrame) -> int:

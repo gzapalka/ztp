@@ -1,11 +1,6 @@
-<form method="post">
-    <div class="form-group">
-        <label for="content">Podaj czas dla którego zwrócone zostają metryki:</label>
-        <br>
-        <textarea name="content" placeholder="12-12-2023 12:34:00"
-                  class="form-control">{{ request.form['content'] }}</textarea>
-    </div>
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-</form>
+<h1>Metryki z wybranego czasu: {{ time }}</h1>
+<b>Accuracy</b>: {{time_metrics['Accuracy']}}<br>
+<b>Loss</b>: {{time_metrics['Loss']}}<br>
+<b>AUC</b>: {{time_metrics['AUC']}}<br>
+<b>MAE</b>: {{time_metrics['MAE']}}<br>
+<b>RMSE</b>: {{time_metrics['RMSE']}}<br>
