@@ -35,7 +35,7 @@ services:
       kafka:
         condition: service_healthy
 
-  linear-regression-client:
+  logistic-regression-client:
     build:
       context: ./model/
       dockerfile: Dockerfile
@@ -61,6 +61,6 @@ services:
     volumes:
       - ./web/:/app/
     depends_on:
-      - linear-regression-client
+      - logistic-regression-client
       - kafka
       - producer

@@ -5,7 +5,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-model_api_url = 'http://linear-regression-client:8080/'
+model_api_url = 'http://logistic-regression-client:8080/'
 
 
 @app.route('/')
